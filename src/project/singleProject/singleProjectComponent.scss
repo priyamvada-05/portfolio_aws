@@ -1,0 +1,101 @@
+$color: #0cf;
+.row{
+	margin: 20px 0;
+}
+
+.text{
+	margin-top: 25px;
+	width: 85%;
+	height: 100%;
+	margin-left: 155px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+
+
+	  & .text-title {
+	font-weight: bold;
+	font-size: 1.7rem;
+	text-align: left;
+	margin-bottom: 1.8rem;
+}
+
+& .para{
+	font-size: 1.35rem;
+}
+
+& .button {
+    display: inline-block;
+    width: 180px;
+    margin-top: 10px;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color;
+        border-radius: 10rem;
+        z-index: -2;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: darken($color, 15%);
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+    &:hover {
+        color: #fff;
+        &:before {
+            width: 100%;
+        }
+    }
+}
+
+}
+
+.image {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+
+      & .Tilt{
+      	margin-right: 250px;
+      }
+
+      & img{
+      	background-size: cover;
+      }
+
+      & .thumbnail {
+        border: none;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        transition: all 0.2s ease-out;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+        transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+          0.5s box-shadow,
+          0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+
+      }
+  }

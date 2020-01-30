@@ -1,0 +1,15 @@
+.project{
+margin-top: 5px;
+  color: black;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+
+  .section-title{
+  	margin: 10px auto;
+  	text-transform: capitalize;
+    font-size: 3.5rem;
+    font-weight: 700;
+
+  }
+}
