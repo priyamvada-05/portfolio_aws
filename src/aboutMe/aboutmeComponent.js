@@ -7,7 +7,7 @@ const AboutMeComponent= ()=>{
 	return(
 		<div className='about'>
 
-		        <h2 class="section-title">
+		        <h2 class="section-title w3-animate-zoom">
 		          About me
 		        </h2>
 

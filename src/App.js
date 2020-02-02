@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ProjectsComponent from './project/projectComponent';
 import ContactComponent from './contact/contactComponent';
 import SkillsComponent from './skills/skillsComponent';
+import 'tachyons';
 
 function App() {
   return (

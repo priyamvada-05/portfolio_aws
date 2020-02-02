@@ -1,7 +1,7 @@
 import React from 'react';
 import './skillsComponent.scss';
 import ReactImg from '../assest/react.png';
-import { ReactComponent as AngularImg} from '../assest/angular-icon.svg';
+import AngularImg from '../assest/angular.png';
 import ExpressImg from '../assest/express.png';
 import PythonImg from '../assest/python.png';
 import RImg from '../assest/R.png';
@@ -42,12 +42,13 @@ class SkillsComponent extends React.Component{
 	render(){
 	return(
 		<div className='skills'>
-		<div className='container-fluid text-center padding'>
+		<div className='text-center padding'>
 				<div className='col-12'>
 					<h2 className='title'>Skills</h2>
 				</div>
 				<div className='row'>
-				<div className='col-md-4 social padding'>
+				<div className='col-sm-12 col-md-4 social padding'>
+					<div className='grow'>
 					<img src={ReactImg} 
 						 onMouseOver={this.OnChangeIn} 
 						 onMouseOut={this.OnChangeOut}
@@ -55,18 +56,23 @@ class SkillsComponent extends React.Component{
 						 height='190px' 
 						 width='' 
 						 name='react'/>
-					{ this.state.react ? <p className='text'>React.js</p>: null}
+					{ this.state.react ? <p className=''>&#123; React.js &#125;</p>: null}
+					</div>
 				</div>
-				<div className='col-md-4 social padding'>
-					<AngularImg 
-						className='angular' 
-						onMouseOver={this.OnChangeIn}
-						onMouseOut={this.OnChangeOut}
-						height='190px'
-						name='angular'/>
-					{ this.state.angular ? <p className='text'>Angular.js</p>: null}
+				<div className='col-sm-12 col-md-4 social padding'>
+				<div className='grow'>
+					<img src={AngularImg} 
+						 onMouseOver={this.OnChangeIn} 
+						 onMouseOut={this.OnChangeOut}
+						 alt='' 
+						 height='190px' 
+						 width='' 
+						 name='angular'/>
+					{ this.state.angular ? <p className=''>&#123; Angular.js &#125;</p>: null}
 				</div>
-				<div className='col-md-4 social padding'>
+				</div>
+				<div className='col-sm-12 col-md-4 social padding'>
+					<div className='grow'>
 					<img 
 						src={ExpressImg} 
 						onMouseOver={this.OnChangeIn}
@@ -75,31 +81,38 @@ class SkillsComponent extends React.Component{
 						height='190px' 
 						width='' 
 						name='express'/>
-					{ this.state.express ? <p className='text'>Express.js</p>: null}
+					{ this.state.express ? <p className=''>&#123; Express.js &#125;</p>: null}
+				</div>
 				</div>
 				</div>
 
 				<div className='row'>
-				<div className='col-md-4 social padding'>
+				<div className='col-sm-12 col-md-4 social padding'>
+					<div className='grow'>
 					<img src={PythonImg} 
 						 onMouseOver={this.OnChangeIn} 
 						 onMouseOut={this.OnChangeOut}
 						 alt='' height='190px' width='' name='python' />
-					{ this.state.python ? <p className='text'>Python</p>: null}
+					{ this.state.python ? <p className=''>&#123; Python &#125;</p>: null}
 				</div>
-				<div className='col-md-4 social padding'>
+				</div>
+				<div className='col-sm-12 col-md-4 social padding'>
+				<div className='grow'>
 					<img src={RImg} 
 						 onMouseOver={this.OnChangeIn}
 						 onMouseOut={this.OnChangeOut}
 						 alt='' height='190px' width='' name='r'/>
-					{ this.state.r ? <p className='text'>R language</p>: null}
+					{ this.state.r ? <p className=''>&#123; R language &#125;</p>: null}
 				</div>
-				<div className='col-md-4 social padding'>
+				</div>
+				<div className='col-sm-12 col-md-4 social padding'>
+				<div className='grow'>
 					<img src={MongoImg} 
 						 onMouseOver={this.OnChangeIn}
 						 onMouseOut={this.OnChangeOut}
-						 alt='' height='190px' width='' name='mongo'/>
-					{ this.state.mongo ? <p className='text'>Mongo DB</p>: null}
+						 alt='' height='auto' width='' name='mongo'/>
+					{ this.state.mongo ? <p className=''>&#123; Mongo DB &#125;</p>: null}
+				</div>
 				</div>
 				</div>
 		</div>

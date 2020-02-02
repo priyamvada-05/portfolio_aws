@@ -1,5 +1,5 @@
 .skills{
-	height:100vh;
+	
 
 	.title{
 		font-size: 3.5rem;
@@ -9,12 +9,17 @@
 		margin-top: 50px;
 	}
 	.social{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
+		height: 35vh;
+		flex-wrap: wrap;
+		font-size: 1.9rem;
 		.angular{
-			padding: 0 100px;
+			
+		}
+
+		.text{
+			font-size: 1.5rem;
+			text-align: center;
+			height: 10vh;
 		}
 	}
 
@@ -26,7 +31,7 @@
 		width: 70%;
 		display: flex;
 		margin: 0 auto;
-				margin-top: 50px;
+				margin-top: 30px;
 		align-items: center;
 
 	}

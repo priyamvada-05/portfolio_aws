@@ -5,8 +5,8 @@ import Img from '../assest/img.png';
 const IntroductionComponent = ()=>{
 	const src='../assest/img.jpeg';
 	return(
-	 	<div className="hero">
-	      <div className="container">
+	 	<div className="introduction">
+
 	      	<div className='title'>
 	        <h1 className="hero-title load-hidden">
 	        <div className='w3-animate-zoom'>
@@ -22,10 +22,10 @@ const IntroductionComponent = ()=>{
 
 	        </div>
 	        <div className='w3-animate-zoom pic'>
-	        	<img src={Img} alt='img' height='512px' />
+	        	<img src={Img} alt='img' height='512px' width='auto' />
 	        </div>
 
-	      </div>
+
 	    </div>
 
 		)
