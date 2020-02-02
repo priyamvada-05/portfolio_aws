@@ -9,7 +9,7 @@ import Tilt from 'react-tilt';
 
 const SingleProjectComponent = (props)=>{
 
-	const ImageArray=[Img2, Img1, Img3, Img4, Img5}
+	const ImageArray=[Img2, Img1, Img3, Img4, Img5]
 	console.log(props)
 	return(
 		<div class="row">
