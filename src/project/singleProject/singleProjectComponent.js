@@ -24,8 +24,8 @@ const SingleProjectComponent = (props)=>{
                   	{props.p2}
                   </p>
                 </div>
-				<a href="#" class="button">View Resume</a>
-				<a href="#" class="button">View Resume</a>
+				<a href="#" class="button">View Site</a>
+				<a href="#" class="button">View Code</a>
 				<hr />
               </div>
 	    	</div>

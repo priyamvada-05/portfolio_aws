@@ -1,6 +1,6 @@
 export const projectData={
 		prject1:{
-		title:'ABC1',
+		title:'My Portfolio',
 		p1:'A clean, beautiful and responsive portfolio template for Developers!',
 		p2:'This project was highlighted in one of the highest valorated courses on Udemy, called Zero To Mastery.',
 		image:0
