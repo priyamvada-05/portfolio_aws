@@ -1,15 +1,19 @@
 import React from 'react';
 import './aboutmeComponent.scss';
-import Img from '../assest/img.jpeg';
+import Img from '../assest/iimage.png';
 
 const AboutMeComponent= ()=>{
 
 	return(
 		<div className='about'>
+				<div className='row'>
+				<div class="col-md-12 col-sm-12">
 
 		        <h2 class="section-title w3-animate-zoom">
 		          About me
 		        </h2>
+		        </div>
+		        </div>
 
 		        <div class="row">
 	         		 <div class="col-md-6 col-sm-12">
@@ -17,7 +21,7 @@ const AboutMeComponent= ()=>{
 			              <img
 			                class="img-fluid rounded shadow-lg"
 			                height="auto"
-			                width="350px"
+			                width="310px"
 			                src={Img}
 			                alt="Profile Image"
 			              />

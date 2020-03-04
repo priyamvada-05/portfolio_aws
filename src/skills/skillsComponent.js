@@ -7,6 +7,7 @@ import PythonImg from '../assest/python.png';
 import RImg from '../assest/R.png';
 import MongoImg from '../assest/mongo.jpg';
 
+
 class SkillsComponent extends React.Component{
 
 	constructor(){
@@ -48,6 +49,7 @@ class SkillsComponent extends React.Component{
 				</div>
 				<div className='row'>
 				<div className='col-sm-12 col-md-4 social padding'>
+				
 					<div className='grow'>
 					<img src={ReactImg} 
 						 onMouseOver={this.OnChangeIn} 
@@ -58,6 +60,7 @@ class SkillsComponent extends React.Component{
 						 name='react'/>
 					{ this.state.react ? <p className=''>&#123; React.js &#125;</p>: null}
 					</div>
+					
 				</div>
 				<div className='col-sm-12 col-md-4 social padding'>
 				<div className='grow'>

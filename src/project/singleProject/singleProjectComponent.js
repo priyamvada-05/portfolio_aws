@@ -5,15 +5,18 @@ import Img2 from '../../assest/Capture2.PNG';
 import Img3 from '../../assest/Capture3.PNG';
 import Img4 from '../../assest/Capture4.PNG';
 import Img5 from '../../assest/Capture5.PNG';
+import ImgD from '../../assest/CaptureData.PNG';
 import Tilt from 'react-tilt';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const SingleProjectComponent = (props)=>{
 
-	const ImageArray=[Img2, Img1, Img3, Img4, Img5]
-	console.log(props)
+	const ImageArray=[Img2,ImgD, Img1, Img3, Img4, Img5]
 	return(
 		<div class="row">
+		
 	    	<div class="col-lg-5 col-sm-12">
+	    	<ScrollAnimation animateIn='bounceInLeft'>
               <div class="text">
                 <h3 class="text-title">{props.title}</h3>
                 <div className='para'>
@@ -24,13 +27,15 @@ const SingleProjectComponent = (props)=>{
                   	{props.p2}
                   </p>
                 </div>
-				<a href="#" class="button">View Site</a>
-				<a href="#" class="button">View Code</a>
+				<a href={props.link} target="_blank" class="button">View Site</a>
 				<hr />
               </div>
+              </ScrollAnimation>
 	    	</div>
+	    	
 
 	    	<div class="col-lg-7 col-sm-12">
+	    	<ScrollAnimation animateIn='bounceInLeft'>
               <div class="image">
 					<Tilt className="Tilt shadow-4" options={{ max : 15 }} style={{ height: 350, width: 650 }} >
 						 <div className="Tilt-inner"> 
@@ -38,6 +43,7 @@ const SingleProjectComponent = (props)=>{
 						 </div>
 					</Tilt>
               </div>
+              </ScrollAnimation>
 	    	</div>
 
 

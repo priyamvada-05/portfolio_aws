@@ -10,10 +10,12 @@
     "bootstrap": "^4.4.1",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "react-tilt": "^0.1.4",
     "tachyons": "^4.11.1",
+    "typewriter-effect": "^2.12.2",
     "w3-css": "^4.1.0"
   },
   "scripts": {
